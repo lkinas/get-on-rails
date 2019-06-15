@@ -39,7 +39,6 @@ RSpec.describe ImportsController, type: :controller do
     it "creates a release called 'Eu Nasci Há 10 Mil Anos Atrás' for Raul Seixas artist" do
       raul = user.artists.where(name: 'Raul Seixas').first
       wise_raul = raul.releases.where(title: 'Eu Nasci Há 10 Mil Anos Atrás').first
-
       expect(wise_raul).to be_present
     end
   end
